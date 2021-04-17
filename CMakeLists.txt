@@ -1,8 +1,11 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.2.1)
+project (scratch)
 
-set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CXX_FLAGS "-std=c++17")
+include(CMakeToolsHelpers OPTIONAL)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic")
+set(CMAKE_CXX_STANDARD 17)
 
-project(intentrecognition_cpluscplus)
-
-add_executable(result main.cpp)
+add_subdirectory(app)
+add_subdirectory(test)
+add_subdirectory(vendor/googletest/googletest)
