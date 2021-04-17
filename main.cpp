@@ -1,9 +1,34 @@
 #include "header.h"
 
-using namespace std;
+//using namespace std;
 
 int main()
 {
-    std::cout<<"Hello \n";
+    std::string intent;
+    std::cout<<"Please enter your question: ";
+    std::getline(std::cin,intent);
+    //std::cout<<intent<<"\n";
+    if(std::regex_search(intent, weather))
+    {
+        if(std::regex_search(intent,city))
+        {
+            std::cout<<"Checks Weather in City \n";
+        }
+        else
+        std::cout<<"Checks Weather \n";
+    }
+    else if(std::regex_search(intent,fact))
+    {
+        std::cout<<"Gets a fact \n";
+    }
+    else if(std::regex_search(intent,check))
+    {
+        std::cout<<"Checks Calander \n";
+    }
+    else
+    {
+        std::cout<<"Sorry wrong input \n";
+    }
+    //std::cout<<"Hello \n";
     return 0;
 }
