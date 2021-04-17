@@ -4,30 +4,30 @@
 
 int main()
 {
-    std::string intent;
-    std::cout<<"Please enter your question: ";
-    std::getline(std::cin,intent);
+    string intent;
+    cout<<"Please enter your question: ";
+    getline(cin,intent);
     //std::cout<<intent<<"\n";
-    if(std::regex_search(intent, weather))
+    if(regex_search(intent, weather))
     {
-        if(std::regex_search(intent,city))
+        if(regex_search(intent,city))
         {
-            std::cout<<"Intent: Get Weather in City \n";
+            cout<<"Intent: Get Weather in City \n";
         }
         else
-        std::cout<<"Intent: Get Weather \n";
+        cout<<"Intent: Get Weather \n";
     }
-    else if(std::regex_search(intent,fact))
+    else if(regex_search(intent,fact))
     {
         std::cout<<"Intent: Get fact \n";
     }
-    else if(std::regex_search(intent,check))
+    else if(regex_search(intent,check))
     {
-        std::cout<<"Checks Calander \n";
+        cout<<"Checks Calander \n";
     }
     else
     {
-        std::cout<<"Sorry wrong input \n";
+        cout<<"Sorry wrong input \n";
     }
     //std::cout<<"Hello \n";
     return 0;
