@@ -12,14 +12,14 @@ int main()
     {
         if(std::regex_search(intent,city))
         {
-            std::cout<<"Checks Weather in City \n";
+            std::cout<<"Intent: Get Weather in City \n";
         }
         else
-        std::cout<<"Checks Weather \n";
+        std::cout<<"Intent: Get Weather \n";
     }
     else if(std::regex_search(intent,fact))
     {
-        std::cout<<"Gets a fact \n";
+        std::cout<<"Intent: Get fact \n";
     }
     else if(std::regex_search(intent,check))
     {

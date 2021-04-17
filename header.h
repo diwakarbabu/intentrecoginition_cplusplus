@@ -6,8 +6,8 @@
 
 //Init - Set of regular expression variables
 
-//To check weather - keywords include Weather, Temperature, Rain, Sunny
-std::regex weather("[wW]eather|[tT]emperature|[rR]ain|[Ss]unny");
+//To check weather - keywords include Weather, Climate, Temperature, Rain, Sunny, Snowy,
+std::regex weather("[wW]eather|[tT]emperature|[rR]ain|[Ss]unny|[cC]limate|[sS]nowy");
 
 //To check city - only after checking weather - keyword include in, city
 std::regex city("in|[cC]ity");
