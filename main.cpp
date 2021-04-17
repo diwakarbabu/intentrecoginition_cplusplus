@@ -19,9 +19,9 @@ int main()
     }
     else if(regex_search(intent,fact))
     {
-        std::cout<<"Intent: Get fact \n";
+        cout<<"Intent: Get fact \n";
     }
-    else if(regex_search(intent,check))
+    else if(regex_search(intent,check) || regex_search(intent,date))
     {
         cout<<"Checks Calander \n";
     }
