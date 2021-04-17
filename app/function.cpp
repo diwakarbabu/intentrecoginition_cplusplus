@@ -39,7 +39,7 @@ int checkintent(string intent)
     }
     else if(regex_search(intent,check) || regex_search(intent,date))
     {
-        cout<<"Checks Calander \n";
+        cout<<"Intent: Checks Calander \n";
         return 3;
     }
     else
