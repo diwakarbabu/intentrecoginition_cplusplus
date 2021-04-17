@@ -9,7 +9,7 @@ The idea is to be able to ask a set of predefined questions and accurately recog
 * Am I free at 13:00 PM tomorrow? ==> Prints (Intent: Check calendar)
 * Tell me an interesting fact. => Prints (Intent: Get Fact)
 
-## How to run the program? ##
+## How to run and test the program? ##
 
 ### Build the program ###
 
@@ -20,9 +20,16 @@ cmake ..
 make 
 ```
 
-### Run the program ###
+### Run the program (from ```build``` directory) ###
 ```
-./result 
+cd app/
+./output_app
+```
+
+### Test the program (from ```build``` directory) ###
+```
+cd test/
+./output_test
 ```
 
 ## Tasks: ##
